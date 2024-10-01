@@ -14,3 +14,6 @@
 1. Name of pattern, type, short intro.
 2. Rationale for choosing it.
 3. UML with decription.
+
+## Due dates
+Oct. 27
