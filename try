@@ -7,3 +7,4 @@ classDiagram
         - key: String
         - value: Object | Array | String | Number | Boolean | null
     }
+industry usage : the facade pattern is mainly used when lots of fuction need to happen behind the scene.
