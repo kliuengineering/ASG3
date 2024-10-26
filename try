@@ -1,13 +1,13 @@
-jason a, FACADE, hello, im very intrigued by the work done at Klein Engineering and i appreciate the opportunity to apply.
-https://youtu.be/B1Y8fcYrz5o?si=ihb3cAKr3t7Zir2B   and    
-im choosing this pattern because of interesting personal ties in my life.
-kotlin
+#jason a, FACADE, hello, im very intrigued by the work done at Klein Engineering and i appreciate the opportunity to apply.
+#https://youtu.be/B1Y8fcYrz5o?si=ihb3cAKr3t7Zir2B   and    
+#im choosing this pattern because of interesting personal ties in my life.
+#kotlin
 classDiagram
     class JSON {
         - key: String
         - value: Object | Array | String | Number | Boolean | null
     }
-industry usage : the facade pattern is mainly used when lots of fuction need to happen behind the scene.
+#industry usage : the facade pattern is mainly used when lots of fuction need to happen behind the scene.
 {
   "inventory": [
     {
