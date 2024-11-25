@@ -1,0 +1,45 @@
+#jason a, FACADE, hello, im very intrigued by the work done at Klein Engineering and i appreciate the opportunity to apply.
+#https://youtu.be/B1Y8fcYrz5o?si=ihb3cAKr3t7Zir2B   and    
+#im choosing this pattern because of interesting personal ties in my life.
+#kotlin
+classDiagram
+    class JSON {
+        - key: String
+        - value: Object | Array | String | Number | Boolean | null
+    }
+#industry usage : the facade pattern is mainly used when lots of fuction need to happen behind the scene.
+{
+  "inventory": [
+    {
+      "id": 1,
+      "type": "basketball",
+      "brand": "Nike",
+      "size": "7"
+    },
+    {
+      "id": 2,
+      "type": "dumbbell",
+      "weight": 10
+    },
+    // ... other items
+  ]
+}
+class GymInventoryFacade {
+    private val inventory: List<Map<String, Any>> = // Load JSON data here
+
+    fun findBasketball(): Map<String, Any>? {
+        return inventory.firstOrNull { it["type"] == "basketball" }
+    }
+}
+class GymInventoryFacade {
+    private val inventory: List<Map<String, Any>> = // Load JSON data here
+
+    fun findBasketball(brand: String? = null, size: Int? = null): Map<String, Any>? {
+        return inventory.firstOrNull { item ->
+            item["type"] == "basketball" &&
+            (brand == null || item["brand"] == brand) &&
+            (size == null || item["size"] == size)
+        }
+    }
+}
+val basketball = facade.findBasketball("Nike", 7)
