@@ -14,7 +14,7 @@ on: 10/20/2024
   workflow_dispatch: [ " this is the way " ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs: find distributors
+jobs: find distributors = Done
   # This workflow contains a single job called "build"
   build: artifact [ " $ " ]
     # The type of runner that the job will run on
